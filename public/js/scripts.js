@@ -44,6 +44,10 @@ socket.on('sensor-data', (content) => {
         y: content.time,
         a: content.sensorData.moisture
     });
-    $('.table-body').append(template);
+    $('.table-body').prepend(template);
+    console.log($('.table-body > tr').length);
+    if ($('.table-body > tr').length > 8) {
+        $('.table-body tr:last').remove();
+    }
     chart.setData(data);
 });
