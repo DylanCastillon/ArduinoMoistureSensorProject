@@ -11,6 +11,7 @@ let chart = Morris.Line({
     pointStrokeColors: ['gray'],
     lineColors: ['red']
 });
+
 socket.on('sensor-data', (content) => {
     let template = "<tr><td>" + content.sensorData.moisture + "%</td>" +
         "<td>" + content.time + "</td> </tr> "
