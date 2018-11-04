@@ -1,8 +1,29 @@
-.table {
-    background:white;
-    width: 45.3em;
+#divname{
+    height:400px;
 }
 
-.line-example {
-    background:white; 
+.table {
+    background:white;
+    width: 42.6em;
+    margin: 1em;
+    border-radius: 1px;
+
+}
+
+#line-example {
+    margin: 1em;
+    background:white;
+    border-radius: 1px;
+}
+
+#donut-example {
+    margin: 1em;
+    background:white;
+    border-radius: 50px;
+}
+
+#area-example {
+    margin: 1em;
+    background:white;
+    border-radius: 1px;
 }
